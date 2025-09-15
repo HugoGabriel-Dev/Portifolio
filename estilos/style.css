@@ -34,6 +34,9 @@ body{
 }
 
 header{
+  position: fixed;
+  width: 100%;
+  top: 0%;
   background-color: var(--destaque);
   padding: 10px;
   display: flex;
@@ -66,7 +69,7 @@ nav.menu a:hover{
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
-  margin-top: 15px;
+  margin-top: 60px;
   gap: 20px;
 }
 
@@ -113,4 +116,36 @@ div#social a{
 
 div#social a:hover{
   color: var(--destaque-inverso);
+}
+
+section#detalhes{
+  grid-column: 2;
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--destaque);
+}
+
+.video-conteiner{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-conteiner iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
 }
